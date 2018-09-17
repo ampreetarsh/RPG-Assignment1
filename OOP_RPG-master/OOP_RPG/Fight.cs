@@ -41,10 +41,14 @@ namespace OOP_RPG
             Console.WriteLine("You've encountered a " + monster.Name + "! " + monster.Strength + " Strength/" + monster.Defense + " Defense/" +
             monster.CurrentHP + " HP. What will you do?");
             Console.WriteLine("1. Fight");
+            Console.WriteLine("2. Run Away");
             var input = Console.ReadLine();
             if (input == "1")
             {
                 this.HeroTurn();
+            }
+            else if (input == "2") {
+                this.RunAway();
             }
             else
             {
@@ -117,6 +121,21 @@ namespace OOP_RPG
         {
             Console.WriteLine("You've been defeated! :( GAME OVER.");
             return;
+        }
+
+        public void RunAway() {
+            if (hero.Speed > monster.Speed)
+            {
+                hero.CurrentHP += hero.Speed;
+                hero.Strength += hero.Speed;
+                Console.WriteLine("Congrats!! you ran away from the " + monster.Name);
+                Console.ReadLine();
+                this.Start();
+            }
+            else {
+                Console.WriteLine("Sorry You are unable to run away from the " + monster.Name);
+                Console.ReadLine();
+            }
         }
 
     }

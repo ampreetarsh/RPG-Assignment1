@@ -11,7 +11,7 @@ namespace OOP_RPG
         public int OriginalHP { get; set; }
         public int CurrentHP { get; set; }
         public int Gold { get; set; }
-
+        public int Speed { get; set; }
 
         public Monster(string name, int strength, int defense, int originalHP, int currentHp)
         {
@@ -21,6 +21,7 @@ namespace OOP_RPG
             this.OriginalHP = originalHP;
             this.CurrentHP = currentHp;
             this.Gold = 5;
+            this.Speed = 10;
         }
     }
 }

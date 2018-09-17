@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_RPG
 {
-    class Potion : IItem
+    public class Potion : IItem
     {
         public int HP { get; set; }
         public string Name { get; set; }

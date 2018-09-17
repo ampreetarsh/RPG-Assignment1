@@ -3,6 +3,11 @@ namespace OOP_RPG
 {
     public class Weapon : IItem
     {
+        public string Name { get; set; }
+        public int Strength { get; set; }
+        public int OriginalValue { get; set; }
+        public int ResellValue { get; set; }
+
         public Weapon(string name, int strength, int originalValue, int resellValue) {
             this.Name = name;
             this.Strength = strength;
@@ -10,9 +15,7 @@ namespace OOP_RPG
             this.ResellValue = resellValue;
         }
         
-        public string Name { get; set; }
-        public int Strength { get; set; }
-        public int OriginalValue { get; set; }
-        public int ResellValue { get; set; }
+
+        
     }
 }
