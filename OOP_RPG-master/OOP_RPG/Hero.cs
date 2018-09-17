@@ -116,6 +116,7 @@ namespace OOP_RPG
                     {
                         this.CurrentHP += i.HP;
                         Console.WriteLine(i.HP);
+                        this.PotionBag.RemoveAt(0);
                     }
                 }
                 else {
