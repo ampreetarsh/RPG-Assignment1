@@ -258,7 +258,7 @@ namespace OOP_RPG
                     }
                 }
                 else {
-                    Console.WriteLine("OOps! the User has no Armors to sell!.Press r or return to return back to menu.");
+                    Console.WriteLine("OOps! the User has no Potions to sell!.Press r or return to return back to menu.");
                     Console.ReadLine();
                     this.Menu();
                 }               

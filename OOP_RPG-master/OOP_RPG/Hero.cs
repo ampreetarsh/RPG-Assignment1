@@ -112,12 +112,8 @@ namespace OOP_RPG
             else if (input == "3") {
                 if (this.PotionBag.Count != 0)
                 {
-                    foreach (var i in this.PotionBag)
-                    {
-                        this.CurrentHP += i.HP;
-                        Console.WriteLine(i.HP);
-                        this.PotionBag.RemoveAt(0);
-                    }
+                    this.CurrentHP += this.PotionBag[0].HP;
+                    this.PotionBag.RemoveAt(0);
                 }
                 else {
                     Console.WriteLine("OOps You don't have any Hp!!");
